@@ -4,7 +4,7 @@ A simple and unfeatured bash script &amp; crontab to remove the oldest files in 
 1. Clone the repository in /opt:
 ```
 cd /opt
-git clone <url>
+git clone https://github.com/tellaro-luke/cleanup.git
 ```
 2. Set up the crontab: `sudo crontab -e`
 
