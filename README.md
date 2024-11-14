@@ -1,5 +1,5 @@
 # cleanup
-A simple and unfeatured bash script &amp; crontab to remove the oldest files in a directory given a desired % threashold to maintain. Intended to be used with Security Onion sensors to replace the iffy clearing mechanism(s) for /nsm/zeek/logs.
+A simple and unfeatured bash script &amp; crontab template to remove the oldest files in a directory given a desired % threashold to maintain. Intended to be used with Security Onion sensors to replace the iffy clearing mechanism(s) for /nsm/zeek/logs. The defaults in the script will keep the /nsm partition around 90% utilized. There are tons of things this script does not do well. Firstly, it assumes that Zeek logs consume the vast majority of the partition. Sometimes pcaps or Suricata logs are the only concerns, in which case you could probably just change the TARGET_DIR variable to suit. Use this only if you find that the baked-in cleanup functions of Security Onion are not working properly or as expected. Disk quotas are intended to be set in the relevant section(s) of the SOC console: https://docs.securityonion.net/en/2.4/administration.html#configuration
 
 1. Clone the repository in /opt:
 ```
